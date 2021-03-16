@@ -1,0 +1,72 @@
+<!--By Jasmin Adilovic 
+    EX17 Day09-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Input</title>
+  </head>
+  <h2>CatPhotoApp</h2>
+  <main>
+    <p>
+      <a href="#footer">Jump to Bottom</a>
+    </p>
+    <a href="#">
+      <img
+        src="https://images.pexels.com/photos/1693441/pexels-photo-1693441.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+        alt="gray cat on tree branch"
+      />
+    </a>
+    <p>Kitty ipsum dolor sit amet, shed everywhere</p>
+    <b>Things cats love:</b>
+    <ul>
+      <li>Chees</li>
+      <li>Sleep</li>
+      <li>Heat</li>
+    </ul>
+    <b>Top 3 things cats hate:</b>
+    <ol>
+      <li>Cold</li>
+      <li>Work</li>
+      <li>Dogs</li>
+    </ol>
+    <!--Form to submit cat photo url-->
+    <form action="/submit-cat-photo">
+      <!--if no url is entered submit will not be performed and message fill out this field will show-->
+      <input type="text" placeholder="cat photo URL" required />
+      <button type="submit">Submit</button>
+    </form>
+
+    <div>
+      <label for="inside">
+        <input
+          id="inside"
+          type="radio"
+          name="inside-outside"
+          value="Inside"
+          checked
+        />Inside
+      </label>
+      <label for="outside">
+        <input
+          id="outside"
+          type="radio"
+          name="inside-outside"
+          value="Outside"
+        />Outside
+      </label>
+    </div>
+
+    <div>
+      <label>
+        <input type="checkbox" name="pets" value="Dog" checked />Dog
+      </label>
+      <label> <input type="checkbox" name="pets" value="Cat" />Cat </label>
+      <label>
+        <input type="checkbox" name="pets" value="Hamster" />Hamster
+      </label>
+      <label> <input type="checkbox" name="pets" value="Bird" />Bird </label>
+      <label> <input type="checkbox" name="pets" value="Fish" />Fish </label>
+    </div>
+  </main>
+  <footer id="footer"></footer>
+</html>
